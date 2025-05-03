@@ -11,7 +11,7 @@ const app = express();
 const upload = multer({ dest: 'uploads/' });
 
 app.use(cors({
-    origin: 'https://dashapixie.com',
+    origin: 'https://thedelgira.com',
     methods: ['POST'],
     allowedHeaders: ['Content-Type']
 }));
@@ -23,8 +23,8 @@ app.use(express.static('public'));
 const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        user: 'hey@dashapixie.com',
-        pass: 'uhzb ikkg lawc ampw'
+        user: 'tattoo@thedelgira.com',
+        pass: 'utbj wckv yayw bkkz'
     }
 });
 
@@ -55,7 +55,7 @@ app.post('/send-email', upload.fields([{ name: 'idFront' }, { name: 'idBack' }])
 I am not a hemophiliac (bleeder). I do not have Diabetes, Epilepsy, Hepatitis, Aids or any other communicable disease. 
 I am not under the influence of alcohol and or drugs.
 
-I acknowledge it is not reasonably possible for Dasha Pixie to determine whether I might have an allergic reaction to the pigments or process used in my Tattoo,
+I acknowledge it is not reasonably possible for Delgira to determine whether I might have an allergic reaction to the pigments or process used in my Tattoo,
 and I agree to accept the risk that such a reaction is possible.
 
 I acknowledge that infection is always possible as a result of obtaining a Tattoo, particularly in the event that I do not take proper care of my Tattoo, 
@@ -68,14 +68,14 @@ I understand that if my skin color is dark, the Colors will not appear as bright
 I acknowledge a Tattoo is a permanent change to my appearance and no representations have been made to me regarding the ability to later change or remove my tattoo. 
 To my knowledge, I do not have any physical, mental, medical impairment or disability, which might affect my well-being as a direct or indirect result of my decision to have any tattoo-related work done at this time.
 
-I acknowledge that I have truthfully represented to Dasha Pixie that I am 18 years old, and the following information is true and correct.
-I acknowledge obtaining of my tattoo is by my choice alone and I consent to the application of the tattoo and to any action or conduct of Dasha Pixie reasonably necessary to perform the tattoo procedure.
+I acknowledge that I have truthfully represented to Delgira that I am 18 years old, and the following information is true and correct.
+I acknowledge obtaining of my tattoo is by my choice alone and I consent to the application of the tattoo and to any action or conduct of Delgira reasonably necessary to perform the tattoo procedure.
 
-I agree to release and forever discharge and hold harmless Dasha Pixie from any and all claims, damages, and legal actions arising from or connected in any way with my tattoo of the procedures and conduct used to apply my Tattoo.
+I agree to release and forever discharge and hold harmless Delgira from any and all claims, damages, and legal actions arising from or connected in any way with my tattoo of the procedures and conduct used to apply my Tattoo.
 
 PHOTOGRAPH AND VIDEO CONSENT, RELEASE, AND WAIVER OF RIGHTS
 
-I, the undersigned, hereby grant Dasha Pixie (hereafter referred to as "the Artist") and anyone authorized by the Artist the absolute, perpetual, and irrevocable right and permission to photograph, film, record, and/or otherwise capture my likeness, image, voice, tattoo(s), and/or body (in part or in whole), and to use, reproduce, edit, alter, publish, distribute, publicly display, and create derivative works from such materials, in any and all media now known or hereafter developed, for any lawful purpose, including but not limited to promotional, commercial, educational, or artistic purposes, worldwide and in perpetuity, without restriction and without compensation to me.
+I, the undersigned, hereby grant Delgira (hereafter referred to as "the Artist") and anyone authorized by the Artist the absolute, perpetual, and irrevocable right and permission to photograph, film, record, and/or otherwise capture my likeness, image, voice, tattoo(s), and/or body (in part or in whole), and to use, reproduce, edit, alter, publish, distribute, publicly display, and create derivative works from such materials, in any and all media now known or hereafter developed, for any lawful purpose, including but not limited to promotional, commercial, educational, or artistic purposes, worldwide and in perpetuity, without restriction and without compensation to me.
 
 I understand and agree that:
 
@@ -182,8 +182,8 @@ or third party verification will not in any way affect the enforceability of you
         if (idBack) attachments.push({ filename: idBack.originalname, path: idBack.path });
 
         const mailOptions = {
-            from: 'hey@dashapixie.com',
-            to: 'hey@dashapixie.com',
+            from: 'tattoo@thedelgira.com',
+            to: 'tattoo@thedelgira.com',
             subject: 'New Consent Form Submission',
             text: 'Please see the attached document and ID files.',
             attachments
